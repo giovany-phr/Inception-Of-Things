@@ -21,4 +21,4 @@ Useful Vagrant commands:
 - `vagrant suspend` = suspends a virtual machine (remembers state)
 
 - `vagrant destroy` = stops and deletes all traces of the vagrant machine
-- `vagrant destroy` -f = same as above, without confirmation
+- `vagrant destroy -f` = same as above, without confirmation
