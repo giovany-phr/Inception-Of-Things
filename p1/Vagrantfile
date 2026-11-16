@@ -1,0 +1,32 @@
+#Creating two machines with latest version of Ubuntu and minimum resources in CPU and RAM
+#The machine name must be the login of someone in the team
+#Hostname of 1st machine must be followed by S (like Server), IP address is 192.168.56.110
+#Hostname of 2nd machine must be followed by SW (like Server Worker) , IP address is 192.168.56.111
+
+Vagrant.configure('2') do |config|
+
+  #1st machine
+  config.vm.define "S" do |machine|
+    machine.vm.box = 'ubuntu/jammy64'
+    machine.vm.network "private_network", ip: '192.168.56.110'
+    machine.vm.hostname = "jewuS"
+    machine.vm.provider "virtualbox" do |vb|
+      vb.name = "jewu"
+      vb.cpus = '1'
+      vb.memory = '512'
+    end
+  end
+
+  #2nd machine
+  config.vm.define "SW" do |machine|
+  machine.vm.box = 'ubuntu/jammy64'
+  machine.vm.network "private_network", ip: '192.168.56.111'
+  machine.vm.hostname = "jewuSW"
+  machine.vm.provider "virtualbox" do |vb|
+    vb.name = "jewu"
+    vb.cpus = '1'
+    vb.memory = '512'
+    end
+  end
+
+end
