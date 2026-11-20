@@ -8,7 +8,7 @@ This project requires to set up several environments under specific rules.
 
 ## Vagrant
 
-Vagrant is a powerful tool to **automatize configuration and creation of virtual machines** by setting up a Vagrantfile.
+**Vagrant** is a powerful tool to **automatize configuration and creation of virtual machines** by setting up a Vagrantfile.
 
 Useful Vagrant commands:
 
@@ -25,3 +25,5 @@ Useful Vagrant commands:
 
 - `vagrant destroy` = stops and deletes all traces of the vagrant machine
 - `vagrant destroy -f` = same as above, without confirmation
+
+**Kubectl** is a terminal command line tool to execute orders in Kubernetes clusters.
