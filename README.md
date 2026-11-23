@@ -26,4 +26,15 @@ Useful Vagrant commands:
 - `vagrant destroy` = stops and deletes all traces of the vagrant machine
 - `vagrant destroy -f` = same as above, without confirmation
 
+## Kubectl
+
 **Kubectl** is a terminal command line tool to execute orders in Kubernetes clusters.
+They often have the following syntax: `kubectl [command] [TYPE] [NAME] [flags]`
+
+- `sudo kubectl get nodes -o wide` = list all nodes in wide output format for more information
+- `sudo kubectl cluster-info` = display addresses of the master (server) and cluster services
+- `sudo kubectl get pods -A` = display pods from all namespaces in the cluster
+
+Check k3s status:
+- `sudo systemctl status k3s` = state of k3s server service in the Server
+- `sudo systemctl status k3s-agent` = state of k3s agent service in the Worker
